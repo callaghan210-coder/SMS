@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "WDTU",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://localhost:8080/BC200/",
+            "serverInstance": "BC200",
+            "port": 2049,
+            "schemaUpdateMode":"ForceSync",
+            "authentication": "Windows",
+            "startupObjectId": 60114,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "usePublicURLFromServer": true
+        }
+    ]
+}
