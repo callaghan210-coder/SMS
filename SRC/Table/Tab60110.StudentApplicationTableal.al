@@ -64,6 +64,30 @@ table 60110 "Student Application"
         {
             DataClassification = ToBeClassified;
         }
+        field(10; "CreatedOn"; DateTime)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(11; "CreatedBy"; Code[20])
+        {
+            DataClassification = SystemMetadata;
+        }
+        field(12; "Approval Status"; Enum "Document Approval")
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(13; Email; text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(14; "Phone No."; integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(15; Course; code[50])
+        {
+            DataClassification = ToBeClassified;
+        }
         //fields Created By ( User setup,Full Name of the User)
         //fields Created On (Date and Time)
         //field "Approval Status" Enum "Document Approval"
@@ -94,9 +118,19 @@ table 60110 "Student Application"
     end;
 
     trigger OnDelete()
+    var
+        CurrentUser: Text[50];
     begin
-        //Permission to delete if the user is the one creating
-        //Check The Approval Status to be Open
+        // Get the current user
+        CurrentUser := UserId();
+
+        // Check if the current user is the creator
+        if (CreatedBy <> CurrentUser) then
+            Error('You do not have permission to delete this record as you are not the creator.');
+
+        // Check if the approval status is "Open"
+        if ("Approval Status" <> "Approval Status"::Open) then
+            Error('You can only delete records with an approval status of "Open".');
     end;
 
     var
