@@ -4,15 +4,13 @@ codeunit 60112 "Student Approval Workflow"
 
     trigger OnRun()
     var
-        StudentApplicationRec: Record "StudentApplicationTable.al";
+        StdAppRec: Record "Student Application";
         CustomerRec: Record Customer;
     begin
-        
-        StudentApplicationRec.Get();
 
-    
-        CustomerRec."No." := StudentApplicationRec."No.";
-        CustomerRec.Name := StudentApplicationRec."Full Name";
+        StdAppRec.Get();
+        CustomerRec."No." := StdAppRec."No.";
+        CustomerRec.Name := StdAppRec."Full Name";
         CustomerRec.Insert;
     end;
 }

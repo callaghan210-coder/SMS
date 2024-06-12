@@ -1,22 +1,35 @@
-table 60111 "StudentManagementSetupTable.al"
+table 60111 "Student Management Setup"
 {
-    Caption = 'StudentManagementSetupTable.al';
+    Caption = 'Student Management Setup';
     DataClassification = ToBeClassified;
 
     fields
     {
-        field(1; "Minimum age"; Integer)
+        field(1; "Primary Key"; Code[10])
         {
-            Caption = 'Minimum age';
+            Caption = 'Primary Key';
         }
         field(2; "Minimum age"; Integer)
         {
             Caption = 'Minimum age';
         }
+        field(3; "Maximum age"; Integer)
+        {
+            Caption = 'Minimum age';
+        }
+        field(4; "Student No."; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "No. Series";
+        }
+        field(5; "No of Days in a Year"; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
     keys
     {
-        key(PK; "Minimum age")
+        key(PK; "Primary Key")
         {
             Clustered = true;
         }
