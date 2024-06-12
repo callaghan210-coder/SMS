@@ -2,7 +2,6 @@ page 60114 "Course List"
 {
     PageType = List;
     SourceTable = "Course";
-    //ApplicationArea = All;
 
     layout
     {
