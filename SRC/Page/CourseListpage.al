@@ -1,7 +1,7 @@
 page 60114 "Course List"
 {
     PageType = List;
-    SourceTable = "Course";
+    SourceTable = "Course Table";
 
     layout
     {
