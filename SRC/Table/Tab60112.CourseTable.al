@@ -1,25 +1,23 @@
-table 60113 "Course"
+table 60112 "Course Table"
 {
+    Caption = 'Course';
     DataClassification = ToBeClassified;
-
+    
     fields
     {
-        field(1; "Code"; Code[10])
+        field(1; "Code"; Code[20])
         {
-            DataClassification = ToBeClassified;
+            Caption = 'Course ID';
         }
-
         field(2; "Name"; Text[50])
         {
-            DataClassification = ToBeClassified;
+            Caption = 'Course Name';
         }
-
-        field(3; "Duration (Years)"; Integer)
+        field(3; "Duration (Years)"; integer)
         {
-            DataClassification = ToBeClassified;
+            Caption = 'Course Duration';
         }
     }
-
     keys
     {
         key(PK; "Code")
