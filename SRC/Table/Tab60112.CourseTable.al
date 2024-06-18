@@ -2,7 +2,7 @@ table 60112 "Course Table"
 {
     Caption = 'Course';
     DataClassification = ToBeClassified;
-    
+
     fields
     {
         field(1; "Code"; Code[20])

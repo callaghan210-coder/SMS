@@ -3,6 +3,9 @@ page 60113 "Course Card"
     Caption = 'Course Card';
     PageType = Card;
     SourceTable = "Course Table";
+    ApplicationArea = All;
+    UsageCategory = ReportsAndAnalysis;
+    CardPageId = "Course Card";
 
     layout
     {
@@ -17,7 +20,7 @@ page 60113 "Course Card"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course ID field.', Comment = '%';
                 }
-                field("Name"; Rec. "Name")
+                field("Name"; Rec."Name")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course Name field.', Comment = '%';
