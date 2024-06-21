@@ -88,7 +88,7 @@ table 60110 "Student Application"
         {
             DataClassification = ToBeClassified;
         }
-        field(16; "Curse Code"; Code[20])
+        field(16; "Course Code"; Code[20])
         {
             DataClassification = ToBeClassified;
         }
@@ -136,7 +136,7 @@ table 60110 "Student Application"
         {
             DataClassification = ToBeClassified;
         }
-        
+
 
         //fields Created By ( User setup,Full Name of the User)
         //fields Created On (Date and Time)

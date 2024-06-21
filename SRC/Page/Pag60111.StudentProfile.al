@@ -8,9 +8,15 @@ page 60111 "Student Profile"
     {
         area(Content)
         {
-            group(General)
+            group("Bio Data")
             {
-                Caption = 'General';
+                Caption = 'Bio Data';
+
+                field("No."; Rec."Student No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the NO. field.', Comment = '%';
+                }
 
                 field("Full Name"; Rec."Full Name")
                 {
@@ -37,6 +43,25 @@ page 60111 "Student Profile"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
                 }
+                field("National ID"; Rec."National ID")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
+                }
+                field("Birth Certificate No."; Rec."Birth Certificate No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
+                }
+                field(Age; Rec.Age)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Age field.', Comment = '%';
+                }
+            }
+            group(Contact)
+            {
+                Caption = 'Contact Details';
                 field(Email; Rec.Email)
                 {
                     ApplicationArea = All;
@@ -47,22 +72,29 @@ page 60111 "Student Profile"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Phone No. field.', Comment = '%';
                 }
-                field("No."; Rec."Student No.")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the NO. field.', Comment = '%';
-                }
-                field(Course; Rec.Course)
+            }
+
+            group(Academic)
+            {
+                Caption = 'Academic details';
+
+                field("Course Code"; Rec."Course Code")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
-                field(Age; Rec.Age)
+                field("Course Title"; Rec."Course Title")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Age field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
+
             }
+            group("Next Of Kin")
+            {
+                Caption='Next of Kin';
+            }
+
         }
     }
 }
