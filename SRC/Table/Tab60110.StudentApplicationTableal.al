@@ -5,7 +5,7 @@ table 60110 "Student Application"
 
     fields
     {
-        field(1; "No."; Code[20])
+        field(1; "Student No."; Code[20])
         {
             Caption = 'NO.';
         }
@@ -88,13 +88,63 @@ table 60110 "Student Application"
         {
             DataClassification = ToBeClassified;
         }
+        field(16; "Curse Code"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(17; "Course Title"; text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(18; "National ID"; integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(19; "KRA PIN"; Code[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(20; "Birth Certificate No."; Code[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(21; Address; text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(22; Country; text[40])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(23; County; text[40])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(24; Village; text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(25; "Nearest Pos"; text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(26; "Nearest School"; text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(27; Level; Enum "Education Level")
+        {
+            DataClassification = ToBeClassified;
+        }
+        
+
         //fields Created By ( User setup,Full Name of the User)
         //fields Created On (Date and Time)
         //field "Approval Status" Enum "Document Approval"
     }
     keys
     {
-        key(PK; "No.")
+        key(PK; "Student No.")
         {
             Clustered = true;
         }
@@ -102,10 +152,10 @@ table 60110 "Student Application"
 
     trigger OnInsert()
     begin
-        if Rec."No." = '' then begin
+        if Rec."Student No." = '' then begin
             StdMgtSetup.Get();
             StdMgtSetup.TestField("Student No.");
-            NoSeriesMgt.InitSeries(StdMgtSetup."Student No.", XRec."No. Series", 0D, "No.", "No. Series");
+            NoSeriesMgt.InitSeries(StdMgtSetup."Student No.", XRec."No. Series", 0D, "Student No.", "No. Series");
         end;
 
         if ("Age" < StdMgtSetup."Minimum Age") or
