@@ -15,7 +15,7 @@ page 60112 "Student List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the No. Series field.', Comment = '%';
                 }
-                field("No."; Rec."No.")
+                field("No."; Rec."Student No.")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the NO. field.', Comment = '%';

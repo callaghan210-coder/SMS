@@ -47,7 +47,7 @@ page 60111 "Student Profile"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Phone No. field.', Comment = '%';
                 }
-                field("No."; Rec."No.")
+                field("No."; Rec."Student No.")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the NO. field.', Comment = '%';

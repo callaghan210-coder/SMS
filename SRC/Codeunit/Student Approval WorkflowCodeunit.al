@@ -9,7 +9,7 @@ codeunit 60112 "Student Approval Workflow"
     begin
 
         StdAppRec.Get();
-        CustomerRec."No." := StdAppRec."No.";
+        CustomerRec."No." := StdAppRec."Student No.";
         CustomerRec.Name := StdAppRec."Full Name";
         CustomerRec.Insert;
     end;
