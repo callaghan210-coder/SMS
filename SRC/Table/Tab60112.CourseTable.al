@@ -1,26 +1,26 @@
-table 60112 "Course Table"
+table 60112 "Course"
 {
     Caption = 'Course';
     DataClassification = ToBeClassified;
 
     fields
     {
-        field(1; "Code"; Code[20])
+        field(1; "Course ID"; Code[20])
         {
             Caption = 'Course ID';
         }
-        field(2; "Name"; Text[50])
+        field(2; "Course Title"; Text[50])
         {
-            Caption = 'Course Name';
+            Caption = 'Course Title';
         }
-        field(3; "Duration (Years)"; integer)
+        field(3; "Course Duration"; integer)
         {
-            Caption = 'Course Duration';
+            Caption = 'Course Duration (Years)';
         }
     }
     keys
     {
-        key(PK; "Code")
+        key(PK; "Course ID")
         {
             Clustered = true;
         }

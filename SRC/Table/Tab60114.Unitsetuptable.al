@@ -1,6 +1,6 @@
-table 60114 "Units setup table"
+table 60114 "Unit Setup"
 {
-    Caption = 'Units setup table';
+    Caption = 'Unit Setup';
     DataClassification = ToBeClassified;
     
     fields

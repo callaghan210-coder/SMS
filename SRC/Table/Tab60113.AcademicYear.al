@@ -1,6 +1,6 @@
-table 60113 "Academyc Year"
+table 60113 "Academic Year"
 {
-    Caption = 'Academyc Year';
+    Caption = 'Academic Year';
     DataClassification = ToBeClassified;
 
     fields

@@ -1,7 +1,7 @@
 page 60114 "Course List"
 {
     PageType = List;
-    SourceTable = "Course Table";
+    SourceTable = "Course";
 
     layout
     {
@@ -9,16 +9,18 @@ page 60114 "Course List"
         {
             repeater(Group)
             {
-                field("Code"; Rec."Code")
+                field("Code"; Rec."Course ID")
                 {
                 }
-
-                field("Name"; Rec."Name")
+                field("Course Title"; Rec."Course Title")
                 {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course Title field.', Comment = '%';
                 }
-
-                field("Duration (Years)"; Rec."Duration (Years)")
+                field("Course Duration"; Rec."Course Duration")
                 {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course Duration (Years) field.', Comment = '%';
                 }
             }
         }
