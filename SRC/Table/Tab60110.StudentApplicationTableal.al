@@ -7,7 +7,7 @@ table 60110 "Student Application"
     {
         field(1; "Student No."; Code[20])
         {
-            Caption = 'NO.';
+            Caption = 'No.';
         }
         field(2; "First Name"; Text[50])
         {
@@ -135,6 +135,32 @@ table 60110 "Student Application"
         field(27; Level; Enum "Education Level")
         {
             DataClassification = ToBeClassified;
+        }
+        field(28; "NKName"; text[200])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Next Of Kin Name';
+        }
+        field(29; "NKAddress"; text[50])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Next Of Kin Address';
+        }
+        field(30; "NKEmail"; text[100])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Next Of Kin Email';
+        }
+        field(31; "NKPhone No."; integer)
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Next Of Kin Phone No.';
+
+        }
+        field(32; "NKRelationship"; text[50])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Next Of Kin Relationship';
         }
 
 
