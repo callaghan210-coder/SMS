@@ -88,11 +88,77 @@ page 60111 "Student Profile"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
+                field("Level"; Rec."Level")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
 
             }
             group("Next Of Kin")
             {
-                Caption='Next of Kin';
+                Caption = 'Next of Kin';
+                field("Next Of Kin Name"; Rec."NKName")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+                field("Next Of Kin Address"; Rec."NKAddress")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+                field("Next Of Kin Email"; Rec."NKEmail")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+                field("Next Of Kin Phone No."; Rec."NKPhone No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+                field("Next Of Kin Relationship"; Rec."NKRelationship")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+            }
+            group("Location Details")
+            {
+                field("Student Address"; Rec."Address")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+
+                field("Country"; Rec."Country")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+                field("County"; Rec."County")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+                field("Village"; Rec."Village")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+                field("Nearest Pos"; Rec."Nearest Pos")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+                field("Nearest School"; Rec."Nearest School")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                }
+
+
             }
 
         }
