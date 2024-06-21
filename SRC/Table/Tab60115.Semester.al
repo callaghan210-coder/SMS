@@ -1,4 +1,4 @@
-table 60115 "Semester "
+table 60115 "Semester"
 {
     Caption = 'Semester ';
     DataClassification = ToBeClassified;
