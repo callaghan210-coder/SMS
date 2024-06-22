@@ -1,8 +1,9 @@
-page 60112 "Student List"
+page 60119 "Pending Student List"
 {
-    Caption = 'Student List';
+    Caption = 'Pending Student List';
     PageType = List;
     SourceTable = "Student Application";
+    SourceTableTemporary = false;
 
     layout
     {
@@ -57,7 +58,6 @@ page 60112 "Student List"
                     ToolTip = 'Specifies the value of the Age field.', Comment = '%';
                 }
 
-
                 field(Email; Rec.Email)
                 {
                     ApplicationArea = All;
@@ -69,7 +69,6 @@ page 60112 "Student List"
                     ToolTip = 'Specifies the value of the Phone No. field.', Comment = '%';
                 }
 
-
                 field("Course Code"; Rec."Course Code")
                 {
                     ApplicationArea = All;
@@ -80,12 +79,11 @@ page 60112 "Student List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
-                field("Level"; Rec."Level")
+                field(Level; Rec.Level)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
-
 
                 field("Next Of Kin Name"; Rec."NKName")
                 {
@@ -113,23 +111,23 @@ page 60112 "Student List"
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
 
-                field("Student Address"; Rec."Address")
+                field("Student Address"; Rec.Address)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
 
-                field("Country"; Rec."Country")
+                field(Country; Rec.Country)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
-                field("County"; Rec."County")
+                field(County; Rec.County)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
-                field("Village"; Rec."Village")
+                field(Village; Rec.Village)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
@@ -144,10 +142,15 @@ page 60112 "Student List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
-
-
             }
         }
     }
 
+    
+
+    trigger OnOpenPage();
+    begin
+         Rec.SETFILTER("Approval Status", Format("Document Approval"::Open));
+    end;
 }
+
