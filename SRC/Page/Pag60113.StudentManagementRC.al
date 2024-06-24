@@ -55,6 +55,34 @@ page 60113 "Student Management RC"
                     ApplicationArea = all;
                     RunObject = page "Course List";
                 }
+                action("Student Profile")
+                {
+                    ApplicationArea = all;
+                    RunObject = page "Student Profile";
+                    Caption = 'Student Profile';
+
+                }
+                action("Pending Approvals")
+                {
+                    ApplicationArea = all;
+                    RunObject = page "Pending Student List";
+                    Caption = 'Pending Approvals';
+
+                }
+                action("Approved Students")
+                {
+                    ApplicationArea = all;
+                    RunObject = page "Approved Student List";
+                    Caption = 'Approved Students';
+
+                }
+                action("Department")
+                {
+                    ApplicationArea = all;
+                    RunObject = page Department;
+                    Caption = 'Department';
+
+                }
             }
         }
         area(Embedding)
@@ -88,6 +116,34 @@ page 60113 "Student Management RC"
                 Caption = 'Course list';
                 ApplicationArea = all;
                 RunObject = page "Course List";
+            }
+            action("Student Profilex")
+            {
+                ApplicationArea = all;
+                RunObject = page "Student Profile";
+                Caption = 'Student Profile';
+
+            }
+            action("Pending Approvalsx")
+            {
+                ApplicationArea = all;
+                RunObject = page "Pending Student List";
+                Caption = 'Pending Approvals';
+
+            }
+            action("Approved Studentsx")
+            {
+                ApplicationArea = all;
+                RunObject = page "Approved Student List";
+                Caption = 'Approved Students';
+
+            }
+            action("Departmentx")
+            {
+                ApplicationArea = all;
+                RunObject = page Department;
+                Caption = 'Department';
+
             }
 
         }
@@ -123,6 +179,34 @@ page 60113 "Student Management RC"
                 Caption = 'Course list';
                 ApplicationArea = all;
                 RunObject = page "Course List";
+            }
+            action("Student Profilexx")
+            {
+                ApplicationArea = all;
+                RunObject = page "Student Profile";
+                Caption = 'Student Profile';
+
+            }
+            action("Pending Approvalsxx")
+            {
+                ApplicationArea = all;
+                RunObject = page "Pending Student List";
+                Caption = 'Pending Approvals';
+
+            }
+            action("Approved Studentsxx")
+            {
+                ApplicationArea = all;
+                RunObject = page "Approved Student List";
+                Caption = 'Approved Students';
+
+            }
+            action("Departmentxx")
+            {
+                ApplicationArea = all;
+                RunObject = page Department;
+                Caption = 'Department';
+
             }
         }
         area(processing)
@@ -164,6 +248,34 @@ page 60113 "Student Management RC"
                     Caption = 'Course list';
                     ApplicationArea = all;
                     RunObject = page "Course List";
+                }
+                action("Student Profilexxx")
+                {
+                    ApplicationArea = all;
+                    RunObject = page "Student Profile";
+                    Caption = 'Student Profile';
+
+                }
+                action("Pending Approvalsxxx")
+                {
+                    ApplicationArea = all;
+                    RunObject = page "Pending Student List";
+                    Caption = 'Pending Approvals';
+
+                }
+                action("Approved Studentsxxx")
+                {
+                    ApplicationArea = all;
+                    RunObject = page "Approved Student List";
+                    Caption = 'Approved Students';
+
+                }
+                action("Departmentxxx")
+                {
+                    ApplicationArea = all;
+                    RunObject = page Department;
+                    Caption = 'Department';
+
                 }
 
             }
