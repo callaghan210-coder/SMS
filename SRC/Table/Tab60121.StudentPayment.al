@@ -31,6 +31,14 @@ table 60121 "Student Payment"
         {
             DataClassification = ToBeClassified;
         }
+        field(7; "StudentName"; Text[150])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(8; Destription; Text[200])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
     keys
     {
